@@ -1,0 +1,53 @@
+<h1 style="color: #4485b8;">Mathest API</h1>
+
+<p><strong style="color: #000;">Basic usage:</strong> This API is used to access the Drive sheets linked to the Mathest Cloud infrastructure.&nbsp; The table below shows the endpoints and formats to use the api.</p>
+
+<table style="vertical-align: top;border: 6px solid #948473;background-color: #FFE3C6;width: 100%;text-align: center;">
+	<thead>
+	<tr style="height: 23px;"><td style="height: 23px;">Method</td><td style="height: 23px;">API Endpoint</td>
+	<td style="height: 23px;">Description</td>
+	</tr>
+</thead>
+<tbody>
+	<tr style="height: 25px;">
+	<td style="min-width: 140px; height: 25px;"><strong>returnNextQuestion<br /></strong></td>
+	<td style="height: 25px;">"?&lt;base_url&gt;/question?uid=&lt;user_uid&gt;&amp;row=&lt;next_row&gt;&amp;sno=&lt;sheet_number&gt;"</td>
+	<td style="height: 25px;">Returns next question to be answered from the user database</td>
+	</tr>
+	<tr style="height: 25px;">
+		<td style="height: 25px;"><strong>returnNewSheet</strong></td>
+		<td style="height: 25px;">"&lt;base_url&gt;/sheet?uid=&lt;user_uid&gt;"</td>
+		<td style="height: 25px;">Creates a new sheet and returns its ID for a new user</td>
+	</tr>
+	<tr style="height: 25px;">
+		<td style="height: 25px;"><strong>addition</strong></td>
+		<td style="height: 25px;">"&lt;base_url&gt;/addition?uid=&lt;user_uid&gt;&amp;row=&lt;\current_row&gt;&amp;answer=&lt;answer_by_user&gt;"</td>
+		<td style="height: 25px;">Addition error classifier</td>
+	</tr>
+	<tr style="height: 25px;">
+		<td style="height: 25px;"><strong>subtraction</strong></td>
+		<td style="height: 25px;">"&lt;base_url&gt;/subtraction?uid=&lt;user_uid&gt;&amp;row=&lt;current_row&gt;&amp;answer=&lt;answer_by_user&gt;"</td>
+		<td style="height: 25px;">Subtraction error classifier</td>
+	</tr>
+	<tr style="height: 25px;">
+		<td style="height: 25px;" valign="top"><strong>multiplication</strong></td>
+		<td style="height: 25px;">"&lt;base_url&gt;/multiplication?uid=&lt;user_uid&gt;&amp;row=&lt;current_row&gt;&amp;answer=&lt;answer_by_user&gt;"</td>
+		<td style="height: 25px;"><p>Multiplication error classifier</p></td>
+	</tr>
+	<tr style="height: 25px;">
+		<td style="height: 25px;"><strong>division<br /></strong></td>
+		<td style="height: 25px;">"&lt;base_url&gt;/division?uid=&lt;user_uid&gt;&amp;row=&lt;current_row&gt;&amp;answer=&lt;answer_by_user&gt;"</td>
+		<td style="height: 25px;"><p>Division error classifier</p></td>
+	</tr>
+	<tr style="height: 25px;">
+		<td style="height: 25px;"><strong>workingOfAddition<br /></strong></td>
+		<td style="height: 25px;">"&lt;base_url&gt;/addition-working?uid=&lt;user_uid&gt;&amp;number1=&lt;first_number&gt;&amp;number2=&lt;second_number&gt;"</td>
+		<td style="height: 25px;"><p>Shows working of Addition</p></td>
+	</tr>
+	<tr style="height: 25px;">
+		<td style="height: 25px;"><strong>workingOfMultiplication<br /></strong></td>
+		<td style="height: 25px;">"&lt;base_url&gt;/multiplication-working?uid=&lt;user_uid&gt;&amp;number1=&lt;first_number&gt;&amp;number2=&lt;second_number&gt;"</td>
+		<td style="height: 25px;"><p>Shows working of Addition</p></td>
+	</tr>
+</tbody>
+</table><hr/><p style="text-align:center"><em>&copy; onCreate() Forum, PESUECC<br> Home page built using htmlg.com</em></p>
